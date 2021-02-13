@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    font-size: 90%;
+
+    --color-background: #F0F0F7;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-one-green: #3db958;
+    --color-line-in-green: #84b990;
+
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: Montserrat;
+    color: var(--color-text-base);
+    background-color: white;
+}
+
+.principal{
+    max-width: 980px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 50px;
+    background-color: var( --color-background); 
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto; 
+    z-index: 999;
+    margin-top: -50px;
+}
+
+#title{
+    font-family: Montserrat;
+    color: var(--color-text-title);
+    text-align: center;
+}
+
+#subtitle{
+    font-family: Montserrat;
+    color: var(--color-text-title);
+    text-align: center;
+}
+
+form{
+    padding: 40px;
+}
+
+b{
+    color: red;
+}
+
+strong{
+    font-size: 16px;
+}
+
+fieldset{
+    border: 0;
+}
+
+input, select, textarea, button{
+    border-radius: 5px;
+}
+
+.campo{
+    padding-top: 20px;
+}
+
+.campo select{
+    font-size: 0.9em;
+}
+
+.campo label{
+    margin-bottom: 0.4em;
+    color: var(--color-text-base);
+    display: block;
+}
+
+fieldset.grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"]{
+    width: 250px;
+    height: 30px;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0,0.2);
+    display: block;
+}
+.campo input[type="email"]{
+    width: 250px;
+    height: 30px;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0,0.2);
+}
+
+.campo strong{
+    font-size: 16px;
+}
+
+.campo select{
+    width: 100px;
+    height: 31px;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0,0.2);
+    display: block;
+}
+
+.campo select option{
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background: #E0E0F8;
+}
+.campo textarea{
+    
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0,0.2);
+    display: block;
+}
+
+.botao{
+    font-size: 1.2em;
+    background: var(--color-line-one-green);
+    border: 0;
+    color: #ffffff;
+    width: 100px;
+    height: 40px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin: 10px;
+}
+
+.botao:hover{
+    background: var(--color-line-in-green);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+
+.botao, select{
+    cursor:pointer;
+}
+
+#check label{
+   margin-right: 10px;
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+       max-width: 570px;
+       padding: 0;
+    } 
+}
+
+@media screen and (max-width: 768px){
+    .campo label{
+        font-size: 12px;
+    }
+    .campo select{
+        font-size: 12px;
+    }
+    .grupo #check label{
+        display: block;
+     }
+    .campo input[type="text"]{
+        width: 200px;
+        height: 28px;
+        display: block;
+    }
+    .campo input[type="email"]{
+        width: 200px;
+        height: 28px;
+    }
+    
+    fieldset.grupo .campo{
+        float: none;
+    }
+    
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+     <div class="principal">     
+
+        <div class="container">
+            <div class="campo">
+                <h1 id="title">Cadastro de DEVs</h1>
+                <p id="subtitle">Complete suas Informações</p>
+            </div>
+
+            <form action=" " method="post" onsubmit="return validaForm(this);">
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <div for="nome"><strong>Nome<b>*</b>:</strong></div>
+                        <input type="text" name="nome" id="nome" requered>
+                    </div>
+
+                    <div class="campo">
+                        <div for="sobrenome"><strong>Sobrenome:</strong></div>
+                        <input type="text" name="sobrenome" id="sobrenome" requered>
+                    </div>
+                    
+                </fieldset>
+
+                <div class="campo">
+                    <div for="email"><strong>Email<b>*</b>:</strong></div>
+                    <input type="email" name="email" id="email" requered>
+                </div>
+
+                <div class="campo">
+                    <div for=""><strong>De qual lado da Aplicação voçê Desenvolve?</strong></div>
+                    <br>
+                    <label for="">
+                        <input type="radio" name="devweb" value="frontend">Front-end
+                    </label>
+
+                    <label for="">
+                        <input type="radio" name="devweb" value="backend">Back-end
+                    </label>
+                    <label for="">
+                        <input type="radio" name="devweb" value="fullstack">Fullstack
+                    </label>
+                </div>
+
+                <div class="campo">
+                    <div for="senioridade"><strong>Senioridade:</strong></div>
+                    <br>
+                    <select name="senioridade">
+                        <option selected disable value="">Selecione</option>
+                        <option value="">Junior</option>
+                        <option value="">Pleno</option>
+                        <option value="">Senior</option>
+                    </select>
+                </div>
+                <br>
+                <fieldset class="campo">
+                    <div id="check">
+                        <div for=""><strong>Selecione as Tecnologias que utiliza:</strong></div>
+                        <br>
+                        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                        HTML<label for="tecnologia1"></label>
+
+                        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                        CSS<label for="tecnologia2"></label>
+
+                        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+                        Javascript<label for="tecnologia3"></label>
+
+                        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                        PHP<label for="tecnologia4"></label>
+
+                        <input type="checkbox" id="tecnologia5" name="tecnologia5" value="Python">
+                        Python<label for="tecnologia5"></label>
+                        
+                    </div>
+                
+                </fieldset>
+
+                <div class="campo">
+                    <br>
+                    <div for=""><strong>Menssagem:</strong></div>
+                    <textarea name="experiencia" id="experiencia" cols="45" rows="6"></textarea>
+              
+                </div>
+                
+                <div>
+                    <button class="botao" type="submit">Concluir</button>
+                </div>
+                
+                
+            </form>   
+        </div>   
+    </div> 
+    <script src="js/javascript.js"></script> 
+</body>
+</html>
